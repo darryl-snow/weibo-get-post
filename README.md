@@ -23,6 +23,8 @@ This app allows you to use the Weibo JavaScript SDKs to:
 sudo echo "127.0.0.1 apple.com" >> /etc/hosts
 ```
 
+If deploying to heroku (git push heroku master) then go to [https://tranquil-beyond-8910.herokuapp.com/](https://tranquil-beyond-8910.herokuapp.com/)
+
 > NOTE: the domain you use, whether apple.com or not, has to match with the domain used in your app settings on open.weibo.com. Be sure to also change the **oauthCallbackURL** variable on **line 30** of `index.coffee` as well.
 
 * Edit the App Key and App secret in `index.coffee` to match those for your weibo app

@@ -34,12 +34,12 @@ app.use session
 # ----------------------------------
 
 # Darryl's
-# appkey = "3294558148"
-# secret = "c2c4b03bafe54f720577deb9ff7fccc5"
+appkey = "3294558148"
+secret = "c2c4b03bafe54f720577deb9ff7fccc5"
 
 # Jim's
-appkey = "109545286"
-secret = "20fbd24d7a166fc66e58a553efa8597c"
+# appkey = "109545286"
+# secret = "20fbd24d7a166fc66e58a553efa8597c"
 
 # Change this to whatever your server-side authorisation page will be
 oauthCallbackUrl = "http://apple.com/auth"

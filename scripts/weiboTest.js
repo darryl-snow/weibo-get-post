@@ -11,7 +11,7 @@ var weiboTest = {
 	//- data for using the Weibo SDK
 	//- be sure to change the app key if needed!
 	config: {
-		appKey: "109545286",
+		appKey: "3294558148",
 		accessToken: "",
 		currentAction: "",
 		currentPost: ""

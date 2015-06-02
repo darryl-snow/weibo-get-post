@@ -1,0 +1,24 @@
+.input,
+textarea
+	border 			1px solid light-grey
+	box-shadow 		none
+	min-width 		72%
+	padding 		$spacing * 0.5 $spacing
+	vertical-align 	top
+
+	&:invalid
+		background 	lighten(red, 85%)
+		border 		1px solid red
+
+	&:valid
+		background 	lighten(green, 85%)
+		border 		1px solid green
+
+input
+	height 			36px
+
+.textarea
+	height 			10em
+	margin-bottom 	$spacing * 0.5
+	resize 			none
+	width			100%

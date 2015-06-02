@@ -1,0 +1,24 @@
+.header
+	group()
+	background 				white
+	border-bottom 			1px solid #ccc
+	padding 				$spacing * 0.5
+	width 					100%
+
+	form
+		column(12)
+
+		@media $lap
+			column(6)
+
+	.login
+		column(12)
+		margin-top 			$spacing
+		text-align 			right
+
+		@media $lap
+			column(6)
+			margin-top 		0
+
+		*
+			vertical-align 	middle

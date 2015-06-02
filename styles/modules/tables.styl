@@ -1,0 +1,27 @@
+.table
+	clear()
+	border				0
+	overflow			hidden
+	table-layout 		fixed
+	width				100%
+	word-wrap			break-word
+
+	thead
+		td
+			background	#f2f2f2 !important
+			font-weight	600
+
+	td
+		padding 		$spacing * 0.5
+		
+		&:first-child
+			width		50%
+			
+			@media $lap
+				width	40%
+				
+			@media $desk
+				width	30%
+
+	tr:nth-child(odd) td
+		background 		#fcfcfc

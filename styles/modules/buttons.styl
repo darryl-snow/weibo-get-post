@@ -1,0 +1,40 @@
+.button
+	background-color 	green
+	border 				none
+	color 				white
+	cursor 				pointer
+	font-weight 		600
+	height 				36px
+	padding 			0.5em 1em
+	text-decoration 	none
+	transition 			$fast-transition
+
+	+ActiveFocusHover()
+		background 		darken(@background-color, 20%)
+
+	&--large
+		font-size 		1.5em
+
+	&--small
+		font-size 		0.75em
+
+	&-share
+		@extends 		.button--small
+
+	&-share--forward
+		margin 			0 0.5 * $spacing
+
+	&[disabled]
+		background 		light-grey
+		cursor 			not-allowed
+		opacity 		0.7
+
+	&-share--send-reply
+		float 			right
+
+.share-buttons
+	margin-top 			$spacing
+	text-align 			right
+
+	&.hidden
+		margin-top 		0

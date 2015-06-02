@@ -1,0 +1,59 @@
+extends templates/master
+
+block title
+	| #{title}
+
+block css
+	//- link(rel="stylesheet", href="http://www.apple.com/ac/globalheader/1.0/styles/globalheader.css")
+	//- link(rel="stylesheet", href="http://www.apple.com/live/2014-sept-event/styles/2014-sept-event.built.css")
+
+block content
+
+	include includes/header
+
+	.container
+
+		section.js-new-post
+
+			article.tile(data-mid="")
+				.tile-content
+				
+					img.tile-source-image.js-avatar(src="", alt="")
+
+					table.table
+						tbody
+							tr
+								td
+									strong Name:
+								td
+									a.js-name(href="", title="")
+							tr
+								td
+									strong Username:
+								td.js-username
+							tr
+								td
+									strong User ID:
+								td.js-userid
+							tr
+								td
+									strong Post Content:
+								td.js-post-content
+							tr
+								td
+									strong Post ID:
+								td.js-post-id
+							tr
+								td
+									strong Post URL:
+								td.js-post-url
+
+	include includes/footer
+
+block script
+	//- Change to your app key!
+	//- Darryl's = 3294558148
+	//- Jim's = 109545286
+	//- Remove debug=true in production
+	script(src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=109545286&debug=true")
+	script(src="/scripts/weiboTest.js")

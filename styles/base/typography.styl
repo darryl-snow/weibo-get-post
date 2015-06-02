@@ -1,0 +1,95 @@
+@font-face
+	font-family 	"PingHei"
+	font-style 		normal
+	font-weight 	200
+	src 			url("fonts/PingHei-light.woff") format("woff"), url("fonts/PingHei/v1/PingHei-light.ttf") format("truetype")
+	*src 			url("")
+	/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
+
+@font-face
+	font-family		"PingHei"
+	font-style		normal
+	font-weight		400
+	src				url("fonts/PingHei-text.woff") format("woff"), url("fonts/PingHei/v1/PingHei-text.ttf") format("truetype")
+	*src			url("")
+	/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
+
+@font-face
+	font-family		"PingHei"
+	font-style		normal
+	font-weight		600
+	src				url("fonts/PingHei-semibold.woff") format("woff"), url("fonts/PingHei/v1/PingHei-semibold.ttf") format("truetype")
+	*src			url("")
+	/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
+
+@font-face
+	font-family		"Myriad Set Pro"
+	font-style		normal
+	font-weight		100
+	src				url("fonts/myriad-set-pro_ultralight.woff") format("woff"), url("fonts/Myriad-Set-Pro/v1/myriad-set-pro_ultralight.ttf") format("truetype")
+	*src			url("")
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+
+@font-face
+	font-family		"Myriad Set Pro"
+	font-style		italic
+	font-weight		100
+	src				url("fonts/Myriad-Set-Pro/v1/myriad-set-pro_ultralight-italic.woff") format("woff"), url("fonts/Myriad-Set-Pro/v1/myriad-set-pro_ultralight-italic.ttf") format("truetype")
+	*src 			url("")
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+
+@font-face
+	font-family		"Apple Icons"
+	font-style		normal
+	font-weight		100
+	src				url("fonts/AppleIcons-Ultralight.eot")
+	src				url("fonts/AppleIcons-Ultralight.eot?#iefix") format("embedded-opentype"),url("fonts/AppleIcons-Ultralight.woff") format("woff"),url("fonts/AppleIcons-Ultralight.ttf") format("truetype")
+
+@font-face
+	font-family		"Apple Icons"
+	font-style		normal
+	font-weight		200
+	src				url("fonts/AppleIcons-Thin.eot")
+	src				url("fonts/AppleIcons-Thin.eot?#iefix") format("embedded-opentype"),url("fonts/AppleIcons-Thin.woff") format("woff"),url("fonts/AppleIcons-Thin.ttf") format("truetype")
+
+@font-face
+	font-family		"Apple Icons"
+	font-style		normal
+	font-weight		400
+	src				url("fonts/AppleIcons-Text.eot")
+	src				url("fonts/AppleIcons-Text.eot?#iefix") format("embedded-opentype"),url("fonts/AppleIcons-Text.woff") format("woff"),url("fonts/AppleIcons-Text.ttf") format("truetype")
+
+@font-face
+	font-family		"Apple Live Icons"
+	font-style		normal
+	font-weight		400
+	src				url("fonts/apple-live-icons.eot")
+	src				url("fonts/apple-live-icons.eot?") format("embedded-opentype"),url("fonts/apple-live-icons.woff") format("woff"),url("fonts/apple-live-icons.ttf") format("truetype")
+
+$sans-serif-font =	"PingHei","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif"
+$serif-font =		"Georgia"
+$monospace-font =	Consolas, monaco, monospace
+$font-family =		$sans-serif-font
+$font-properties =	$font-weight, $line-height, $font-size, $font-family
+
+html,
+body
+	base-type()
+	font-family					$font-family
+	font-weight					200
+	line-height					1.4
+	text-rendering				optimizeLegibility
+	-webkit-font-smoothing		antialiased
+	-moz-osx-font-smoothing		grayscale
+	-moz-font-feature-settings	"liga", "kern"
+
+a
+	color 						$link-colour
+	text-decoration 			none
+
+	&.block
+		display 				block
+
+pre
+	font-size 					0.7em
+	word-wrap 					break-word

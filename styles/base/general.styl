@@ -1,0 +1,58 @@
+html
+	height 				100%
+
+html,
+body
+	background-color	lightest-grey
+	color				$text-colour
+	min-height			100%
+
+*
+	&,
+	&:before,
+	&:after
+		box-sizing		border-box
+
+body
+	padding-bottom		6em
+
+.align
+	
+	&-left
+		text-align		left
+
+	&-right
+		text-align		right
+
+.float
+
+	&-left
+		group()
+		float			left
+
+	&-right
+		group()
+		float			right
+
+.container,
+section
+	group()
+	clear 				both
+
+section
+	column(12)
+	overflow 			visible
+	padding 			0 0 $spacing
+
+	&:first-of-type
+		padding-top 	$spacing
+
+img
+	height 				auto
+	max-width 			100%
+
+.hidden
+	display 			none
+
+@media 	only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+	// Retina specific stuff here

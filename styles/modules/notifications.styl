@@ -1,0 +1,18 @@
+.notification
+	background 		lighten(green, 85%)
+	border 			1px solid green
+	color 			green
+	margin			$spacing 0
+	opacity 		0
+	padding 		$spacing * 0.5
+	text-align 		left
+	transition 		$fast-transition
+
+	&.show
+		opacity 	1
+		transition 	$fast-transition
+
+	&-error
+		background 	lighten(red, 85%)
+		border 		1px solid red
+		color 		red

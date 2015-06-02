@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+	body
+		//- The server has received the Access Token
+		//- we hide it on this page (that will be loaded into the popup)
+		//- so that we can use JavaScript to pass it back to the main window
+		input#token(type="hidden", value="#{token}")
+		script.
+			try {
+				window.opener.weiboTest.authorise(document.getElementById("token").value);
+			} catch(err) {
+			}
+			//- in case the authorise function takes a little time...
+			setTimeout(function() {
+				window.close();
+			}, 100);

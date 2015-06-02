@@ -1,0 +1,20 @@
+extends templates/master
+
+block title
+	| 404: File Not Found
+
+block content
+
+	.container
+
+		section
+
+			h1 404
+			p Couldn't find what you were looking for
+
+			hr
+
+			h2 Request object received:
+
+			code
+				pre= req

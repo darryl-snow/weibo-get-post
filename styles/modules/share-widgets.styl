@@ -1,0 +1,42 @@
+// overwrite default widget styles
+
+.publishButton
+	background 			#2ecc71 !important
+	border 				none !important
+	color 				white !important
+	cursor 				pointer !important
+	display 			none !important
+	font-weight 		600 !important
+	height 				auto !important
+	// margin 				1em !important
+	padding 			0.5em 1em !important
+	text-decoration 	none !important
+	transition 			0.2s all ease-in-out !important
+
+	+ActiveFocusHover()
+		background 		#1dbb61 !important
+
+.publishButton span
+	background 			none !important
+	border 				none !important
+	color 				#fff !important
+	display 			inline !important
+	font-size 			1.25em !important
+	height 				auto !important
+	line-height 		auto !important
+	padding 			0 !important
+
+.icon-reply,
+.icon-retweet
+	cursor 				pointer
+	color 				#d6d6d6
+	-webkit-transition 	color 300ms ease
+	transition 			color
+	font-size 			0.5em
+
+	+ActiveFocusHover()
+		color			#08c
+		transition		color
+
+.icon-share:after
+	cursor				pointer
